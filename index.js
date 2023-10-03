@@ -3,9 +3,11 @@ const app = express();
 const pool = require("./queries.js")
 const film = require('./routes/film.js');
 const categories = require('./routes/category.js')
+const filmCategory = require("./routes/film-category.js");
 
 app.use('/', film);
 app.use('/', categories)
+app.use('/', filmCategory)
 
 
 

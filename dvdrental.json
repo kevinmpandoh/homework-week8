@@ -25,7 +25,7 @@
                 }
             }
         },
-        "/film/id/{filmId}": {
+        "/film/{id}": {
             "get": {
                 "summary": "Get all film by id",
                 "response": {
@@ -33,9 +33,25 @@
                 }
             }
         },
-        "/film/category/{categoryFilm}": {
+        "/film-category/{categoryFilm}": {
             "get": {
                 "summary": "Get all film by category",
+                "response": {
+                    
+                }
+            }
+        },
+        "/category/": {
+            "get": {
+                "summary": "Get all category",
+                "response": {
+                    
+                }
+            }
+        },
+        "/category/:id": {
+            "get": {
+                "summary": "Get all category by id",
                 "response": {
                     
                 }
